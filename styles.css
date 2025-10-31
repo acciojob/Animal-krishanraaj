@@ -1,36 +1,27 @@
-/*  your css code here. If applicable */
 body {
-  background-color: #f9f9f9;
   font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
   text-align: center;
 }
 
 #animal-photos {
-  border: 3px solid #333;
-  background-color: #fff;
-  width: 80%;
-  max-width: 900px;
-  margin: 30px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
   padding: 20px;
-  border-radius: 10px;
 }
 
-#photo-heading {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-#animal-photos img {
-  width: 200px;
-  height: 150px;
+img {
+  width: 250px;
+  height: 180px;
   object-fit: cover;
-  margin: 10px;
-  border-radius: 8px;
-  border: 2px solid #ccc;
-  transition: transform 0.3s ease;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
 }
 
-#animal-photos img:hover {
+img:hover {
   transform: scale(1.05);
-  border-color: #555;
 }
