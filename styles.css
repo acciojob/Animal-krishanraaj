@@ -1,1 +1,36 @@
 /*  your css code here. If applicable */
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#animal-photos {
+  border: 3px solid #333;
+  background-color: #fff;
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#photo-heading {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#animal-photos img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+#animal-photos img:hover {
+  transform: scale(1.05);
+  border-color: #555;
+}
